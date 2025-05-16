@@ -14,9 +14,10 @@ Perform contour detection on the thresholded binary image to identify object bou
 Draw contours on the original frame to visualize detected objects.
 
 ### Results:
-Adaptive thresholding significantly improved the segmentation quality compared to Otsu's method by effectively separating objects from a complex background. Contours were clearly identified around individual objects, demonstrating the method’s ability to delineate object boundaries accurately.
-
-However, when tested in a real-time setup with live video input, the processing speed achieved was approximately 13 frames per second (FPS). Although this frame rate allows for real-time visualization, it may be insufficient for high-speed industrial applications such as bin picking robots, where faster frame rates are critical for timely object detection and manipulation.
+Adaptive thresholding was applied to segment objects from the background in images with complex scenes. While this method provided some improvement in separating objects, it struggled to consistently differentiate objects from the background. The effectiveness of adaptive thresholding heavily depended on factors such as lighting intensity, shadows, surface reflections, and texture variations. These environmental variations caused inconsistencies in segmentation, leading to unreliable contour detection in certain scenarios.
+During real-time video processing, the system achieved approximately 13 frames per second (FPS) for a 10s window. Although this allows visualization in real time, the frame rate may not be adequate for industrial bin picking applications where faster and more robust object detection is required. 
 
 ### Conclusion:
-Adaptive thresholding combined with contour analysis is an effective approach for segmenting objects in challenging backgrounds. Nonetheless, due to the moderate processing speed (around 13 FPS), it may not be the most suitable choice for real-time high-speed bin picking systems. For such applications, more efficient algorithms or hardware acceleration, or deep learning-based methods might be preferred to meet real-time performance requirements.
+Adaptive thresholding and contour analysis can be useful for object segmentation under controlled lighting and simple backgrounds. However, due to its sensitivity to lighting conditions, shadows, reflections, and surface textures, it may not reliably separate objects from backgrounds in complex real-world settings.
+
+For high-speed and reliable object detection in bin picking robots, deep learning-based methods such as convolutional neural networks (e.g., YOLO, Mask R-CNN) are preferred. These models are more robust to environmental variations and can deliver higher accuracy and faster processing speeds, meeting the stringent requirements of real-time industrial applications.
