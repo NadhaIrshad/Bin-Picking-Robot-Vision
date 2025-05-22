@@ -17,4 +17,5 @@
  unless it’s pretrained on large datasets and fine-tuned with effective data augmentation
  or synthetic data
 
- ![output](https://github.com/user-attachments/assets/4e9c60ff-c01a-43f9-b68f-1bde70efd8ed)
+![deeplab_out](https://github.com/user-attachments/assets/d61d79bb-e566-4c75-a711-352fce5aa3a3)
+
