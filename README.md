@@ -46,11 +46,3 @@ For the **bin picking of non-linear, overlapping objects**, **instance segmentat
 - The final model was deployed on an **NVIDIA Jetson Nano**.
 - A custom interface was built to visualize detections and integrate with the robotic control system.
 
-## 📂 Folder Structure (Optional)
-
-```bash
-├── data/                 # Sample images and annotations
-├── models/               # Pretrained weights and configs
-├── scripts/              # Training, inference, and evaluation scripts
-├── interface/            # Code for Jetson Nano interface
-└── README.md             # Project description
